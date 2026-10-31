@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sylhet Study Care With Fahim — শেখার নতুন ঠিকানা।">
+<title>Sylhet Study Care | With Fahim</title>
+<style>
+:root{--bg:#090909;--panel:#141414;--panel2:#1b1b1b;--line:#303030;--white:#f7f7f7;--muted:#aaa;--accent:#d8ff55;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:#090909ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em}.logo{width:42px;height:42px;border-radius:14px;background:var(--accent);color:#101010;display:grid;place-items:center;font-weight:950;font-size:20px}
+.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.16em;font-weight:600}
+.links{display:flex;gap:25px;align-items:center;color:#ccc;font-size:14px}.links a:hover,.links a.active{color:var(--accent)}
+.menu{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.hero{padding:76px 0 56px;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #414141;border-radius:99px;padding:7px 14px;color:#ccc;font-size:12px;letter-spacing:.1em}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.13;letter-spacing:-.04em;margin:22px 0 18px}h1 span{color:var(--accent)}
+.lead{color:#bdbdbd;font-size:17px;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:13px;border:1px solid var(--line);font-weight:750;cursor:pointer;transition:.2s}
+.btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn.secondary{background:#171717}.btn:hover{transform:translateY(-2px)}
+.hero-art{min-height:360px;border:1px solid #3a3a3a;border-radius:30px;background:radial-gradient(circle at 75% 20%,#454545 0,transparent 33%),linear-gradient(145deg,#202020,#0d0d0d);padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.hero-art:before{content:"";position:absolute;width:280px;height:280px;border:1px solid #555;border-radius:50%;right:-70px;top:-90px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}
+.art-top{z-index:1;color:#c9c9c9;font-size:12px;letter-spacing:.15em}.art-mark{z-index:1;font-size:clamp(34px,6.2vw,66px);font-weight:950;letter-spacing:-.045em;line-height:1.12;color:#f4f4f4}.art-mark span{color:var(--accent)}.art-bottom{z-index:1;display:flex;justify-content:space-between;align-items:end;color:#bdbdbd;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0 72px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}.stat strong{font-size:29px;display:block}.stat span{color:var(--muted);font-size:14px}
+section{padding:46px 0 62px;scroll-margin-top:82px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.kicker{color:var(--accent);font-size:12px;letter-spacing:.15em;font-weight:800}.section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.2;margin:7px 0}.section-head p{color:var(--muted);max-width:520px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;transition:.2s}.card:hover{border-color:#777;transform:translateY(-3px)}.iconbox{width:46px;height:46px;border-radius:14px;background:#292929;color:var(--accent);display:grid;place-items:center;font-size:22px;margin-bottom:18px}.card h3{margin:0 0 7px;font-size:20px}.card p{color:var(--muted);margin:0 0 14px;font-size:14px}.meta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:13px;color:#ddd;font-size:13px}.tag{background:#292929;color:var(--accent);padding:4px 9px;border-radius:99px;font-size:11px}
+.teacher{display:flex;gap:15px;align-items:center}.avatar{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,#d8ff55,#777);color:#111;display:grid;place-items:center;font-size:22px;font-weight:900;flex:none}.teacher p{margin:0;color:var(--muted);font-size:13px}.teacher h3{margin:0}
+.band{background:linear-gradient(120deg,#1d1d1d,#111);border:1px solid var(--line);border-radius:26px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px}.band h2{margin:0 0 6px;font-size:clamp(24px,4vw,34px)}.band p{margin:0;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.about-grid .card{height:100%}.subject-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.subject-list span{padding:6px 11px;background:#252525;border:1px solid #393939;border-radius:99px;font-size:12px;color:#ddd}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact-link{display:block;padding:14px;border:1px solid var(--line);border-radius:13px;margin-top:10px;color:#ddd}.contact-link:hover{border-color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#888;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.notice{color:#888;font-size:12px;margin-top:14px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:270px}.grid{grid-template-columns:repeat(2,1fr)}.links{display:none;position:absolute;top:76px;left:0;right:0;background:#101010;border-bottom:1px solid var(--line);padding:18px;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.stats{margin-bottom:42px}}
+@media(max-width:560px){.wrap{width:min(100% - 26px,var(--max))}.nav{height:68px}.links{top:68px}.brand{font-size:14px}.logo{width:38px;height:38px}.hero{padding:38px 0 35px}.lead{font-size:15px}.hero-art{min-height:230px;border-radius:22px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:15px}.stat strong{font-size:24px}.grid,.about-grid,.contact-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:9px}.band{display:block;padding:24px}.band .btn{margin-top:18px;width:100%}section{padding:34px 0 45px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="logo">SC</span><span>SYLHET STUDY CARE<small>WITH FAHIM</small></span></a>
+  <nav class="links" id="navlinks">
+   <a href="#home" class="active">Home</a><a href="#courses">Courses</a><a href="#teachers">Teachers</a><a href="#students">Students</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+ </div>
+</header>
+<main>
+<div class="wrap" id="home">
+ <div class="hero">
+  <div>
+   <div class="eyebrow"><i class="dot"></i> SYLHET STUDY CARE · WITH FAHIM</div>
+   <h1>জ্ঞান অর্জন হোক<br><span>সাফল্যের নতুন শুরু।</span></h1>
+   <p class="lead">সঠিক গাইডলাইন, অভিজ্ঞ শিক্ষকের সহায়তা এবং পরিকল্পিত অনুশীলনের মাধ্যমে নিজের লক্ষ্যের দিকে এগিয়ে যাও। শেখো আত্মবিশ্বাসের সঙ্গে, প্রস্তুতি নাও যত্নসহকারে।</p>
+   <div class="actions"><a class="btn primary" href="#courses">Explore Courses <b>→</b></a><a class="btn secondary" href="#teachers">Meet Our Teachers</a></div>
+  </div>
+  <div class="hero-art"><div class="art-top">LEARN · GROW · ACHIEVE</div><div class="art-mark">SYLHET<br><span>STUDY CARE</span></div><div class="art-bottom"><span>YOUR FUTURE STARTS HERE</span><b>EST. 2026</b></div></div>
+ </div>
+ <div class="stats">
+  <div class="stat"><strong>০৬</strong><span>বিষয়ভিত্তিক কোর্স</span></div>
+  <div class="stat"><strong>০৩</strong><span>শিক্ষক পরিচিতি</span></div>
+  <div class="stat"><strong>১০০%</strong><span>শেখার প্রতি যত্ন</span></div>
+ </div>
+</div>
+<section id="courses"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">WHAT YOU CAN LEARN</div><h2>জনপ্রিয় কোর্সসমূহ</h2></div><p>স্কুল পর্যায়ের গুরুত্বপূর্ণ বিষয়গুলো সহজভাবে বুঝে অনুশীলনের মাধ্যমে দক্ষতা বাড়াও।</p></div>
+ <div class="grid">
+  <article class="card"><div class="iconbox">⚗</div><h3>রসায়ন</h3><p>মৌলিক ধারণা, রাসায়নিক বিক্রিয়া ও গাণিতিক সমস্যা।</p><div class="meta"><span>Class 9–10</span><span class="tag">Chemistry</span></div></article>
+  <article class="card"><div class="iconbox">∑</div><h3>উচ্চতর গণিত</h3><p>সূত্র, উপপাদ্য ও ধাপে ধাপে অঙ্ক সমাধান।</p><div class="meta"><span>Class 9–10</span><span class="tag">Higher Math</span></div></article>
+  <article class="card"><div class="iconbox">⌁</div><h3>পদার্থবিজ্ঞান</h3><p>ধারণা, সূত্রের প্রয়োগ এবং সংখ্যাত্মক সমস্যা।</p><div class="meta"><span>Class 9–10</span><span class="tag">Physics</span></div></article>
+  <article class="card"><div class="iconbox">文</div><h3>বাংলা</h3><p>ব্যাকরণ, সৃজনশীল লেখা ও পাঠ অনুধাবন।</p><div class="meta"><span>School</span><span class="tag">Bangla</span></div></article>
+  <article class="card"><div class="iconbox">A</div><h3>ইংরেজি</h3><p>Grammar, writing, vocabulary ও reading practice।</p><div class="meta"><span>School</span><span class="tag">English</span></div></article>
+  <article class="card"><div class="iconbox">⌘</div><h3>ICT ও গণিত</h3><p>ডিজিটাল ধারণা এবং প্রয়োজনীয় গাণিতিক দক্ষতা।</p><div class="meta"><span>School</span><span class="tag">ICT · Math</span></div></article>
+ </div>
+ <p class="notice">কোর্সের নামগুলো নমুনা হিসেবে দেওয়া হয়েছে। ভর্তি, সময়সূচি ও ফি নিশ্চিত করতে যোগাযোগ করুন।</p>
+</div></section>
+<section id="teachers"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">GUIDANCE THAT MATTERS</div><h2>আমাদের শিক্ষকবৃন্দ</h2></div><p>শিক্ষার্থীদের বুঝে শেখা ও নিয়মিত অনুশীলনে সহায়তা করাই আমাদের লক্ষ্য।</p></div>
+ <div class="grid">
+  <article class="card"><div class="teacher"><div class="avatar">FA</div><div><h3>Fahim Ahmed</h3><p>Founder · Academic Mentor</p></div></div><p style="margin-top:17px">সহজ ব্যাখ্যা, পরিকল্পিত পাঠ এবং শিক্ষার্থীবান্ধব গাইডলাইন।</p></article>
+  <article class="card"><div class="teacher"><div class="avatar">T2</div><div><h3>Teacher Profile 02</h3><p>Subject Teacher</p></div></div><p style="margin-top:17px">বিষয়ভিত্তিক পাঠদান ও অনুশীলনের মাধ্যমে শেখার সহায়তা।</p></article>
+  <article class="card"><div class="teacher"><div class="avatar">T3</div><div><h3>Teacher Profile 03</h3><p>Subject Teacher</p></div></div><p style="margin-top:17px">পরীক্ষার প্রস্তুতি ও নিয়মিত মূল্যায়নে সহায়তা।</p></article>
+ </div>
+ <p class="notice">শিক্ষকদের নাম ও ছবি প্রকাশের আগে সঠিক তথ্য দিয়ে এই নমুনা প্রোফাইলগুলো পরিবর্তন করুন।</p>
+</div></section>
+<section id="students"><div class="wrap">
+ <div class="band"><div><div class="kicker">STUDENT ZONE</div><h2>নিয়মিত শেখো, নিজের অগ্রগতি দেখো।</h2><p>ক্লাসের নোট, অনুশীলন ও গুরুত্বপূর্ণ ঘোষণা এক জায়গায় সাজিয়ে রাখার জন্য শিক্ষার্থী বিভাগ।</p></div><a class="btn primary" href="#contact">যোগাযোগ করো →</a></div>
+</div></section>
+<section id="about"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">ABOUT OUR ACADEMY</div><h2>আমাদের সম্পর্কে</h2></div></div>
+ <div class="about-grid">
+  <div class="card"><h3>Sylhet Study Care</h3><p>শিক্ষার্থীদের জন্য একটি যত্নশীল ও লক্ষ্যভিত্তিক শেখার পরিবেশ গড়ে তোলাই আমাদের উদ্দেশ্য। কঠিন বিষয়কে সহজভাবে বোঝানো, নিয়মিত অনুশীলন এবং আত্মবিশ্বাস তৈরি—এই তিনটি বিষয়কে গুরুত্ব দেওয়া হয়।</p></div>
+  <div class="card"><h3>আমাদের পাঠ্যবিষয়</h3><p>বিজ্ঞান, গণিত ও ভাষাভিত্তিক বিষয়ে পরিকল্পিত সহায়তা।</p><div class="subject-list"><span>Bangla</span><span>English</span><span>ICT</span><span>Chemistry</span><span>Physics</span><span>Higher Math</span><span>Math</span></div></div>
+ </div>
+</div></section>
+<section id="contact"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">GET IN TOUCH</div><h2>যোগাযোগ ও ভর্তি</h2></div><p>কোর্স, ক্লাসের সময়সূচি বা ভর্তি সম্পর্কে জানতে যোগাযোগ করুন।</p></div>
+ <div class="contact-grid">
+  <div class="card"><h3>আমাদের সঙ্গে কথা বলুন</h3><p>নিচের যোগাযোগের তথ্যগুলো নিজের সঠিক তথ্য দিয়ে আপডেট করুন।</p><a class="contact-link" href="mailto:your-email@example.com">✉ ইমেইল: your-email@example.com</a><a class="contact-link" href="tel:+8801XXXXXXXXX">☎ ফোন: +8801XXXXXXXXX</a></div>
+  <div class="card"><h3>ভর্তি সংক্রান্ত তথ্য</h3><p>ভর্তির আগে কোর্স, ফি, ক্লাসের সময় এবং শিক্ষকের তথ্য নিশ্চিত করে নিন।</p><a class="btn primary" href="mailto:your-email@example.com?subject=Admission%20Inquiry">Admission Inquiry →</a><p class="notice">এটি একটি নমুনা যোগাযোগ ব্যবস্থা; ইমেইল ও ফোন নম্বর বসালে লিংকগুলো কাজ করবে।</p></div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Sylhet Study Care · With Fahim</span><span>Learn with care. Grow with confidence.</span></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const sections=[...document.querySelectorAll('main section, #home')], links=[...nav.querySelectorAll('a')];
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-35% 0px -55% 0px'});
+sections.forEach(s=>observer.observe(s));
+</script>
+</body></html>
